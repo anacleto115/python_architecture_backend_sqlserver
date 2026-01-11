@@ -1,0 +1,55 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>6f088f19-a05a-4bbf-b117-b0fdc4837986</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>
+    </StartupFile>
+    <SearchPath>..\lib_application_core;..\lib_utilities;..\lib_domain_context;..\lib_domain_entities;..\lib_infrastructure;..\lib_data_core;..\lib_data_context</SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>lib_application_context</Name>
+    <RootNamespace>lib_application_context</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="lib_application_context\Core\App.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="lib_application_context\Core\FactoryApplicationContext.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="lib_application_context\Core\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="lib_application_context\Implementations\PersonTypesApp.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="lib_application_context\Implementations\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="lib_application_context\__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="lib_application_context\" />
+    <Folder Include="lib_application_context\Core\" />
+    <Folder Include="lib_application_context\Implementations\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>

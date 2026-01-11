@@ -1,0 +1,2 @@
+E:\Languages\Examples\Python\srw_persons\obj\Any CPU\Debug\srw_persons.pyproj.SuggestedBindingRedirects.cache
+E:\Languages\Examples\Python\srw_persons\obj\Any CPU\Debug\srw_persons.pyproj.CoreCompileInputs.cache
